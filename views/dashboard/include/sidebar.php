@@ -8,49 +8,13 @@
 
                 <div class="ml-auto d-flex align-items-center">
                     <div class="d-flex align-items-center d-xl-none">
-                        <div class="color-modes position-relative px-4">
-                            <!--<a
-                                class="bd-theme btn btn-link nav-link dropdown-toggle d-inline-flex align-items-center justify-content-center text-primary p-0 position-relative rounded-circle"
-                                href="#"
-                                aria-expanded="true"
-                                data-bs-toggle="dropdown"
-                                data-bs-display="static"
-                                aria-label="Toggle theme (light)"
-                            >
-                                <svg class="bi my-1 theme-icon-active"><use href="#sun-fill"></use></svg>
-                            </a>
-                            
-                            <ul class="dropdown-menu dropdown-menu-end fs-14px" data-bs-popper="static">
-                                <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="light" aria-pressed="true">
-                                        <svg class="bi me-4 opacity-50 theme-icon"><use href="#sun-fill"></use></svg>
-                                        Light
-                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                    </button>
-                                </li>
-                                
-                                <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-                                        <svg class="bi me-4 opacity-50 theme-icon"><use href="#moon-stars-fill"></use></svg>
-                                        Dark
-                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                    </button>
-                                </li>
-                                
-                                <li>
-                                    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
-                                        <svg class="bi me-4 opacity-50 theme-icon"><use href="#circle-half"></use></svg>
-                                        Auto
-                                        <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                                    </button>
-                                </li>
-                            </ul>-->
-                        </div>
+                        <div class="color-modes position-relative px-4"></div>
                         
                         <div class="dropdown no-caret py-4 px-3 d-flex align-items-center notice me-6">
                             <a href="#" class="dropdown-toggle text-heading pr-3 pr-sm-6 d-flex align-items-center justify-content-end" data-bs-toggle="dropdown">
                                 <img src="assets/images/dashboard/avatar-2.png" alt="Ronald Hunter" class="rounded-circle" width="40" />
                             </a>
+                            
                             <div class="dropdown-menu dropdown-menu-end w-100">
                                 <a class="dropdown-item" href="login/logout">Logout</a>
                             </div>

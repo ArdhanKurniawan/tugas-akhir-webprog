@@ -11,9 +11,17 @@ class User {
 
     public function __construct() {
         $this->checkLibrary = new Check();
+
+        if ($this->checkLibrary->login() == false) {
+            header('Location: login');
+            exit();
+        }
     }
 
     public function index() {
+        $this->constants = new Constants();
+        $this->userModel = new UserModel();
+
         $users = $this->userModel->getAllUsers();
         $base_url = $this->constants->base_url();
 
@@ -42,7 +50,7 @@ class User {
             }
 
         } else {
-            header('Location: dashboard');
+            header('Location: ../../dashboard');
         }
     }
 

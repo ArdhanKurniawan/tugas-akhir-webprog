@@ -11,14 +11,14 @@ class Home {
 
     public function __construct() {
         $this->checkLibrary = new Check();
-    }
 
-    public function index() {
         if ($this->checkLibrary->login() == false) {
             header('Location: login');
             exit();
         }
+    }
 
+    public function index() {
         $this->constants = new Constants();
         $this->userModel = new UserModel();
 

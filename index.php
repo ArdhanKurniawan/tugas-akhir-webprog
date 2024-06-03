@@ -30,12 +30,55 @@ if (in_array('dashboard', $pathSegments)) {
         }
 
     } else {
-        $controllerName = "Home";
+        $controllerName = $methodName;
         $controllerFile = "controllers/dashboard/$controllerName.php";
-        require_once $controllerFile;
-        $controller = new $controllerName();
-        call_user_func_array([$controller, "index"], []);
+
+        if (file_exists($controllerFile)) {
+            require_once $controllerFile;
+
+            $controller = new $controllerName();
+
+            if (method_exists($controller, $methodName)) {
+                call_user_func_array([$controller, $methodName], []);
+
+            } else {
+                if (method_exists($controller, "index")) {
+                    call_user_func_array([$controller, "index"], []);
+                } else {
+                    http_response_code(404);
+                    echo "404 Not Found";
+                }
+            }
+
+        } else {
+            $controllerName = "Home";
+            $controllerFile = "controllers/dashboard/$controllerName.php";
+            require_once $controllerFile;
+            $controller = new $controllerName();
+            call_user_func_array([$controller, "index"], []);
+        }
     }
+
+    // if (file_exists($controllerFile)) {
+    //     require_once $controllerFile;
+
+    //     $controller = new $controllerName();
+
+    //     if (method_exists($controller, $methodName)) {
+    //         call_user_func_array([$controller, $methodName], []);
+
+    //     } else {
+    //         http_response_code(404);
+    //         echo "404 Not Found";
+    //     }
+
+    // } else {
+    //     $controllerName = "Home";
+    //     $controllerFile = "controllers/dashboard/$controllerName.php";
+    //     require_once $controllerFile;
+    //     $controller = new $controllerName();
+    //     call_user_func_array([$controller, "index"], []);
+    // }
 
 } elseif (file_exists("controllers/$methodName.php")) {
     $controllerFile = "controllers/$methodName.php";
