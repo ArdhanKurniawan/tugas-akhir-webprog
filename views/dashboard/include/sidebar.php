@@ -28,7 +28,6 @@
             </div>
             
             <div class="collapse navbar-collapse bg-body position-relative z-index-5" id="primaryMenuSidebar">
-                
                 <ul class="list-group list-group-flush list-group-no-border w-100 p-6">
                     <li class="list-group-item px-0 py-0 sidebar-item mb-3 border-0">
                         <a href="dashboard" class="text-heading text-decoration-none lh-1 sidebar-link py-5 px-6 d-flex align-items-center" title="Dashboard">
@@ -39,25 +38,7 @@
                         </a>
                     </li>
                     
-                    <li class="list-group-item px-0 py-0 sidebar-item mb-3 border-0">
-                        <a href="dashboard/pelamar" class="text-heading text-decoration-none lh-1 sidebar-link py-5 px-6 d-flex align-items-center" title="List Pelamar">
-                            <span class="sidebar-item-icon w-40px d-inline-block text-muted">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="sidebar-item-text fs-14px fw-semibold">List Pelamar</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list-group-item px-0 py-0 sidebar-item mb-3 border-0">
-                        <a href="dashboard/pelamar/freelance" class="text-heading text-decoration-none lh-1 sidebar-link py-5 px-6 d-flex align-items-center" title="List Pelamar">
-                            <span class="sidebar-item-icon w-40px d-inline-block text-muted">
-                                <i class="fas fa-laptop"></i>
-                            </span>
-                            <span class="sidebar-item-text fs-14px fw-semibold">List Pelamar Freelance</span>
-                        </a>
-                    </li>
-                    
-                    <li class="list-group-item px-0 py-0 sidebar-item mb-3 has-children border-0">
+                    <!-- <li class="list-group-item px-0 py-0 sidebar-item mb-3 has-children border-0">
 						<a href="#order"
 						   class="text-heading text-decoration-none lh-1 d-flex sidebar-link align-items-center py-5 px-6 position-relative"
 						   data-bs-toggle="collapse" aria-expanded="false" title="Order">
@@ -81,16 +62,7 @@
 								</li>
 							</ul>
 						</div>
-					</li>
-					
-					<li class="list-group-item px-0 py-0 sidebar-item mb-3 border-0">
-                        <a href="dashboard/divisi" class="text-heading text-decoration-none lh-1 sidebar-link py-5 px-6 d-flex align-items-center" title="User">
-                            <span class="sidebar-item-icon w-40px d-inline-block text-muted">
-                                <i class="fas fa-newspaper"></i>
-                            </span>
-                            <span class="sidebar-item-text fs-14px fw-semibold">Divisi</span>
-                        </a>
-                    </li>
+					</li> -->
 					
                     <li class="list-group-item px-0 py-0 sidebar-item mb-3 border-0">
                         <a href="dashboard/user" class="text-heading text-decoration-none lh-1 sidebar-link py-5 px-6 d-flex align-items-center" title="User">

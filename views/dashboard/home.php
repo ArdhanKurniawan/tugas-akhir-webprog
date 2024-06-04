@@ -126,7 +126,7 @@
                             <div class="row">
                                 <?php foreach ($users as $user) { ?>
                                     <div class="col-sm-6 col-xxl-3 mb-7">
-                                        <a href="dashboard/user/detail/<?= $user->id; ?>">
+                                        <a href="dashboard/user/detail?id=<?= $user->id; ?>">
                                             <div class="card rounded-4">
                                                 <div class="card-body p-7">
                                                     <div class="d-flex">
